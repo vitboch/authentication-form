@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+input,
+select,
+textarea,
+button,
+option {
+  font-family: "Roboto", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #293845;
+}
+
+html,
+body {
+  background-color: #fff;
+  margin: 0;
+  height: 100%;
+}
+
+html.fixed,
+html.fixed body {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body > * {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; /* Want children to grow as the default behaviour. */
+}
+
+a {
+  text-decoration: none;
+}
+
+.o-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.i-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+}
+
+input.text,
+input.submit,
+input.button,
+button.text,
+button.submit,
+button.button,
+.generic-button,
+textarea.text {
+  font-size: 21px;
+  line-height: 25px;
+  margin: 0;
+  height: 60px;
+  border-radius: 3px;
+  border: 0;
+}
+
+input.plain:focus,
+input.text:focus,
+button.text:focus,
+textarea.text:focus {
+  outline: none;
+}
+
+input.text,
+button.text,
+textarea.text {
+  padding: 18px 16px 17px 16px;
+  background-color: #edf1f5;
+  color: #293845;
+}
+
+input.text::-webkit-input-placeholder,
+textarea.text::-webkit-input-placeholder {
+  color: #788896;
+  opacity: 1; /* override Firefox's default placeholder opacity */
+}
+
+input.text::-moz-placeholder,
+textarea.text::-moz-placeholder {
+  color: #788896;
+  opacity: 1; /* override Firefox's default placeholder opacity */
+}
+
+input.text:-ms-input-placeholder,
+textarea.text:-ms-input-placeholder {
+  color: #788896;
+  opacity: 1; /* override Firefox's default placeholder opacity */
+}
+
+input.text::-ms-input-placeholder,
+textarea.text::-ms-input-placeholder {
+  color: #788896;
+  opacity: 1; /* override Firefox's default placeholder opacity */
+}
+
+input.text::placeholder,
+textarea.text::placeholder {
+  color: #788896;
+  opacity: 1; /* override Firefox's default placeholder opacity */
+}
+
+input.text:focus,
+button.text,
+textarea.text:focus {
+  background-color: #fff;
+  outline-offset: -2px;
+  outline: 2px solid #9e96f7; /* whimsy-blue-5 */
+}
+
+/* setting :overflow :hidden on elements also hides the focus outline, */
+/* therefore offset the outline to be inside */
+:focus {
+  outline-offset: -1px;
+}
+
+input.submit,
+input.button,
+button.submit,
+button.button,
+.generic-button {
+  padding: 18px 20px 17px 20px;
+  color: #fff;
+  background-color: #31b6a8;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.12);
+  font-weight: 500;
+}
+
+input.submit:hover,
+input.button:hover,
+button.submit:hover,
+button.button:hover,
+.generic-button:hover {
+  background-color: #1aae9f;
+}
+
+input.submit:disabled,
+input.button:disabled,
+button.submit:disabled,
+button.button:disabled,
+.generic-button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+input.submit:active:not(:disabled),
+input.button:active:not(:disabled),
+button.submit:active:not(:disabled),
+button.button:active:not(:disabled),
+.generic-button:active:not(:disabled) {
+  opacity: 0.6;
+}
+
+form .error {
+  background-color: #d7576b;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  padding: 12px 12px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+form .desc {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header .i-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 1100px;
+}
+
+.header .logo {
+  margin: 34px 20px 35px 50px;
+}
+
+.header .logo img {
+  height: 31px;
+}
+
+.account {
+  min-height: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 21px 0 30px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 3px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
+  padding: 40px 40px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form a {
+  color: #4194dc;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  background-image: none;
+}
+
+.form a:hover {
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#dfe7ed),
+    to(#dfe7ed)
+  );
+  background-image: -o-linear-gradient(top, #dfe7ed 0%, #dfe7ed 100%);
+  background-image: linear-gradient(to bottom, #dfe7ed 0%, #dfe7ed 100%);
+}
+
+.account input {
+  margin-bottom: 18px;
+}

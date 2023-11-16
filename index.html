@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/png" sizes="32x32" rel="icon" href="./img/favicon.png" />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/media.css" rel="stylesheet" />
+    <title>Company</title>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="account">
+      <div class="o-wrapper">
+        <header class="header">
+          <nav class="i-wrapper">
+            <a class="logo" href="/">
+              <img src="./img/favicon.png" alt="logo" />
+            </a>
+          </nav>
+        </header>
+
+        <div class="content">
+          <div class="i-wrapper">
+            <h2 class="title">Welcome!</h2>
+
+            <form
+              class="form"
+              id="login-email"
+              method="POST"
+              autocomplete="off">
+              <input
+                name="email"
+                class="text email"
+                type="email"
+                placeholder="Email"
+                autocomplete="username"
+                data-wc="login-email"
+                required />
+              <input
+                name="password"
+                class="text password"
+                type="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                data-wc="login-password"
+                enterkeyhint="go"
+                required />
+              <input
+                class="submit"
+                type="submit"
+                name="submit"
+                value="Log In" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
